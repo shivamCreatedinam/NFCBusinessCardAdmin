@@ -37,7 +37,7 @@ const AppHeaderDropdown = () => {
           Updates
           <CBadge color="info" className="ms-2">
             42
-          </CBadge>
+          </CBadge> 
         </CDropdownItem>
         <CDropdownItem href="#">
           <CIcon icon={cilEnvelopeOpen} className="me-2" />
@@ -61,7 +61,7 @@ const AppHeaderDropdown = () => {
           </CBadge>
         </CDropdownItem>
         <CDropdownHeader className="bg-body-secondary fw-semibold my-2">Settings</CDropdownHeader>
-        <CDropdownItem href="#">
+        <CDropdownItem href="/custom/AdminProfile">
           <CIcon icon={cilUser} className="me-2" />
           Profile
         </CDropdownItem>

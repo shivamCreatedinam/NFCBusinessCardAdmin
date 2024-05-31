@@ -53,6 +53,13 @@ const Widgets = React.lazy(() => import('./views/widgets/Widgets'))
 // custom
 const Adduser = React.lazy(() => import('./views/custom/Add_user'))
 const Allusers = React.lazy(() => import('./views/custom/All_users'))
+const AdminProfile = React.lazy(() => import('./views/custom/AdminProfile'))
+const Delete = React.lazy(() => import('./views/custom/Delete'))
+const CustomNotification = React.lazy(() => import('./views/custom/Custom_notification'))
+const Subscribed = React.lazy(() => import('./views/custom/Subscribed_user'))
+const NonSubscribed = React.lazy(() => import('./views/custom/Non_Subscribed_user'))
+const Subscription = React.lazy(() => import('./views/custom/Subscription'))
+const AddSocialLinks = React.lazy(() => import('./views/custom/Add_social_links'))
 
 //from App.js
 const Login = React.lazy(() => import('./views/pages/login/Login'));
@@ -109,7 +116,14 @@ const routes = [
 
   // custom paths
   { path: '/custom/adduser', name: 'Adduser', element: Adduser },
-  { path: '/custom/allusers', name: 'Allusers', element: Allusers }
+  { path: '/custom/allusers', name: 'Allusers', element: Allusers },
+  { path: '/custom/AdminProfile', name: 'Allusers', element: AdminProfile },
+  { path: '/custom/delete', name: 'Delete', element: Delete },
+  { path: '/custom/custom_notification', name: 'CustomNotification', element: CustomNotification },
+  { path: '/custom/subscribed', name: 'Subscribed', element: Subscribed },
+  { path: '/custom  ', name: 'NonSubscribed', element: NonSubscribed },
+  { path: '/custom/subscription', name: 'Subscription', element: Subscription },
+  { path: '/custom/add_social_links', name: 'AddSocialLinks', element: AddSocialLinks }
 
 
 ]
